@@ -44,10 +44,15 @@ int update(int x, int y, int value) {
 
 int main() {
 
-//    freopen("test.in", "r", stdin);
-
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
+    update(2, 3, 12);
+    update(224, 24, 13);
+    update(1, 8, 1);
 
+    cout << sum(1, 1) << endl;
+    cout << sum(2, 3) << endl;
+    cout << sum(1, 8) << endl;
+    cout << sum(1000, 1000) << endl;
 }

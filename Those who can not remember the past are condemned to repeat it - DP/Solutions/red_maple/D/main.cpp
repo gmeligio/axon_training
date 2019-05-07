@@ -35,9 +35,6 @@ void solveD(){
         int M = seen.rbegin()->first;
         int m = seen.begin()->first;
 
-        // cout << imie(m) << imie(M) << imie(l) << imie(r) << imie(maxSize)<<endl;
-        // cout.flush();
-
         if(abs(vals[r] - m) <= 1 and abs(vals[r] - M) <= 1) {
             seen[vals[r]]++;
             r++;

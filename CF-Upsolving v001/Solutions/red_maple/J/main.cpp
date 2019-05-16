@@ -42,17 +42,14 @@ void solveJ(){
 
     for(int a = 1; a <= n; ++a) {
         if(!interval.count(a)) {
-            //cout << "[" << a << ", " << a << "]" << endl;
             acc++; 
         }
 
         for(int b : {a - 1, a + 1}){
             if(b < 1 or b > n) continue;
             if(!interval.count(b) or !interval.count(a)) {
-               // cout << "[" << a << ", " << b << "]" << endl;
                 acc++;
             } else if(interval[a].first > interval[b].second) {
-             //   cout << "[" << a << ", " << b << "]" << endl;
                 acc++;
             } 
         }
